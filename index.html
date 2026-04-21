@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClarityLens AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>ClarityLens AI</h1>
+      <p>Understand difficult text in seconds</p>
+    </header>
+
+    <section class="input-section card">
+      <h2>Analyze Complex Text</h2>
+      <textarea id="inputText" placeholder="Paste difficult text here..."></textarea>
+
+      <div class="controls">
+        <select id="modeSelect">
+          <option value="student">Student Mode</option>
+          <option value="professional">Professional Mode</option>
+        </select>
+        <button id="analyzeBtn">Analyze Text</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature card">
+        <h3>Simple Summary</h3>
+        <p>Turns difficult content into clear language.</p>
+      </div>
+      <div class="feature card">
+        <h3>Key Points</h3>
+        <p>Extracts the most important information.</p>
+      </div>
+      <div class="feature card">
+        <h3>Risk Flags</h3>
+        <p>Highlights deadlines, payments, or unclear items.</p>
+      </div>
+    </section>
+
+    <section id="outputSection" class="output-section hidden">
+      <div class="card">
+        <h3>Simple Summary</h3>
+        <p id="summaryOutput"></p>
+      </div>
+
+      <div class="card">
+        <h3>Key Points</h3>
+        <ul id="keyPointsOutput"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Action Items</h3>
+        <ul id="actionsOutput"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Tone</h3>
+        <p id="toneOutput"></p>
+      </div>
+
+      <div class="card">
+        <h3>Risk Flags</h3>
+        <ul id="risksOutput"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Quick Share Version</h3>
+        <p id="quickShareOutput"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
