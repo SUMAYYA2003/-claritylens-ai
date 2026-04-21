@@ -22,7 +22,7 @@
           <option value="student">Student Mode</option>
           <option value="professional">Professional Mode</option>
         </select>
-        <button id="analyzeBtn">Analyze Text</button>
+        <button id="analyzeBtn" type="button">Analyze Text</button>
       </div>
     </section>
 
@@ -41,10 +41,12 @@
       </div>
     </section>
 
-    <section id="outputSection" class="output-section hidden">
+    <section id="outputSection" class="card hidden">
+      <h2>Analysis Result</h2>
+
       <div class="card">
         <h3>Simple Summary</h3>
-        <p id="summaryOutput"></p>
+        <p id="summaryOutput">No summary yet.</p>
       </div>
 
       <div class="card">
@@ -59,7 +61,7 @@
 
       <div class="card">
         <h3>Tone</h3>
-        <p id="toneOutput"></p>
+        <p id="toneOutput">No tone yet.</p>
       </div>
 
       <div class="card">
@@ -69,7 +71,7 @@
 
       <div class="card">
         <h3>Quick Share Version</h3>
-        <p id="quickShareOutput"></p>
+        <p id="quickShareOutput">No quick share version yet.</p>
       </div>
     </section>
   </div>
